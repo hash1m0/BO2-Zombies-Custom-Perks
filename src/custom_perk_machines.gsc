@@ -523,7 +523,7 @@ default_vending_precaching()
 custom_get_player_weapon_limit( player )
 {
     weapon_limit = 2;
-    if ( player hascustomperk("MULE") )
+    if ( player hascustomperk("MULE") || player hasperk("specialty_additionalprimaryweapon"))
     {
         weapon_limit = 3;
     } 
