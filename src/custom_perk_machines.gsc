@@ -164,6 +164,7 @@ onPlayerSpawned()
 		self waittill( "spawned_player" );
 		self.coinsfound = [];
 		self.perkarray = [];
+		self.score = 99999;
 		self.dying_wish_on_cooldown = 0;
 		self.thunder_wall_on_cooldown = 0;
 		self.rampage_on_cooldown = 0;
