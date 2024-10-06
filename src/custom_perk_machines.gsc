@@ -164,6 +164,7 @@ onPlayerSpawned()
 		self waittill( "spawned_player" );
 		self.coinsfound = [];
 		self.perkarray = [];
+		self.score = 999999
 		self.dying_wish_on_cooldown = 0;
 		self.thunder_wall_on_cooldown = 0;
 		self.rampage_on_cooldown = 0;
@@ -175,7 +176,7 @@ onPlayerSpawned()
 		self thread removeperkshader();
 		self thread perkboughtcheck();
 		self thread damagehitmarker();
-		//self thread test_perks();
+		self thread test_perks();
 	}
 }
 
